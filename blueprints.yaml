@@ -1,0 +1,53 @@
+name: Markdown Boxouts
+version: 0.8
+description: "Adds the ability to render boxouts in Markdown to hold separate information from the main body."
+icon: asterisk
+author:
+  name: Frans Blauw
+  email: frans@fransblauw.com
+  url: https://fransblauw.com
+homepage: https://github.com/fransblauw/grav-plugin-markdown-boxouts
+license: MIT
+
+form:
+  validation: strict
+  fields:
+    enabled:
+      type: toggle
+      label: Plugin status
+      highlight: 1
+      default: 0
+      options:
+        1: Enabled
+        0: Disabled
+      validate:
+        type: bool
+
+    built_in_css:
+      type: toggle
+      label: Use built in CSS?
+      highlight: 1
+      default: 1
+      options:
+        1: Enabled
+        0: Disabled
+      validate:
+        type: bool
+
+    boxout_classes:
+        type: list
+        label: Boxout classes
+        help: The classes to render the boxouts
+        fields:
+            .classname:
+                type: text
+                label: CSS Class Name
+                help: This is the classname in the notices.css and should match the name given in the markdown
+            .heading:
+                type: text
+                label: Heading Text
+                help: The text to display in the heading
+            .fontawesome:
+                type: text
+                label: Font Awesome Icon
+                help: Font Awesome icon to display in the heading

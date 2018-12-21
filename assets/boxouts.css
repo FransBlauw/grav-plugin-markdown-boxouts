@@ -1,0 +1,46 @@
+.boxout {
+	margin: 1.7rem 0;
+}
+
+.boxout-body {
+	padding: 1.7rem 30px 1px 30px;
+}
+
+.boxout > .boxout-header {
+    padding-left: 5px;
+	text-transform: uppercase;
+	color: white;
+	font-weight: lighter;
+}
+
+.boxout.tip > .boxout-header {
+    background-color: #5bc0de;	
+}
+
+.boxout.tip {
+    border-left: 10px solid #5bc0de;
+    background: #f4f8fa;
+    color: #28a1c5;
+}
+
+
+.boxout.warning > .boxout-header {
+    background-color: #d9534f;	
+}
+
+.boxout.warning {
+    border-left: 10px solid #d9534f;
+    background: #fdf7f7;
+    color: #b52b27;
+}
+
+.boxout.readmore > .boxout-header {
+    background-color: #f0ad4e;	
+}
+
+.boxout.readmore {
+    border-left: 10px solid #f0ad4e;
+    background: #fcf8f2;
+    color: #df8a13;
+}
+

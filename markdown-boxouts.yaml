@@ -1,0 +1,15 @@
+enabled: true
+built_in_css: true
+boxout_classes:
+  -
+    classname: tip
+    heading: 'Usability Tip'
+    fontawesome: fa-hand-point-up
+  -
+    classname: warning
+    heading: 'Warning'
+    fontawesome: fa-exclamation-triangle
+  -
+    classname: readmore
+    heading: 'Read More'
+    fontawesome: fa-book-open
